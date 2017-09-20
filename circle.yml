@@ -1,6 +1,6 @@
 dependencies:
   override:
-    - mvn clean install 
+    - mvn build 
 test:
   override:
     - mvn -o -X surefire:test
