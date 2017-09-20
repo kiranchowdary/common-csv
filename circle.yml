@@ -4,3 +4,8 @@ dependencies:
 test:
   override:
     - mvn -o -X surefire:test
+deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync /home/ubuntu/common-csv-new/target/classes s3://circleciartifacts    
