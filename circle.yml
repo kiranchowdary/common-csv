@@ -1,6 +1,6 @@
 dependencies:
   override:
-    - mvn build 
+    - mvn compile 
 test:
   override:
     - mvn -o -X surefire:test
